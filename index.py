@@ -1,15 +1,16 @@
-a=100
-b=20
-c=50
-def func() :
+def func(a,b,c) :
     if (a > b):
         if(a<c) :
             print("largest one is : c")
-
-        if (a > c) :
+        
+        else:
             print("largest one is : a")
-    else :
-        print("largest one is : b")
+    if(b>a) : 
+        if(b>c):
+            print("largest one is : b")
+        if(b<c) : 
+            print("largest one is : c")
+            
 
 
-func()
+func(6,5,3)
